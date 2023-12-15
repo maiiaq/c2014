@@ -21,7 +21,7 @@ class Human:
         self.car=Auto(brand_of_car)
     def get_eat(self):
         if self.home.food<=0:
-            self.shopping("food")
+            self.find("food")
         else:
             if self.satiety>=100:
                 self.satiety=100
@@ -81,7 +81,7 @@ job_list={
     "c++ developer":{"salary":40, "gladness_less":3},
     "python developer":{"salary":45, "gladness_less":25},
     "rust developer":{"salary":70, "gladness_less":1}
-
+}
 class Job:
     def __init__(self,job_list):
         self.job = random.choice(list(job_list))
