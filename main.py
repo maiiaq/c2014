@@ -44,7 +44,7 @@ class Student:
             self.to_chill()
             self.end_of_day()
             self.is_alive()
-Nick=Student("name="Nick)
+Nick=Student(name="Nick")
 for day in range(365):
     if Nick.alive==False:
         break
